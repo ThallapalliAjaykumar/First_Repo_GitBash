@@ -113,10 +113,10 @@ int main(void)
 		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 		  HAL_UART_Transmit(&huart2, buffer1, sizeof(buffer1), HAL_MAX_DELAY);
 	  }
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-	  HAL_Delay(100);	//Delay is changed from 1ms to 10ms
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-	  HAL_Delay(100); //Delay is changed from 1ms to 10ms
+	  // HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+	  // HAL_Delay(100);	//Delay is changed from 1ms to 10ms
+	  // HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+	  // HAL_Delay(100); //Delay is changed from 1ms to 10ms
   }
   /* USER CODE END 3 */
 }
